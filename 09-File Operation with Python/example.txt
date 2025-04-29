@@ -1,0 +1,5 @@
+Hello from the python!
+This is a new line!
+Append operation taking placeFirst Line
+Second Line
+Third Line
