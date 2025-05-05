@@ -15,7 +15,6 @@ except ZeroDivisionError:<br>
 **Example**
 
 
-
 <pre>
 try:<br>
     # Code that may raise an exception<br>
@@ -50,6 +49,8 @@ finally:<br>
 
 You can define your own exceptions by creating a class that inherits from Exception.<br>
 
+<pre>
+
 class MyError(Exception):
     pass
 
@@ -57,3 +58,5 @@ try:
     raise MyError("Something went wrong")
 except MyError as e:
     print(e)    
+</pre>
+
