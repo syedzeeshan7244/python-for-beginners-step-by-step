@@ -13,7 +13,9 @@ except ZeroDivisionError:<br>
 
 **Example**
 
-try:<br>
+
+
+<pre> ```try:<br>
     # Code that may raise an exception<br>
 except <ExceptionType1>:<br>
     # Handle ExceptionType1<br>
@@ -22,7 +24,7 @@ except <ExceptionType2>:<br>
 else:<br>
     # Runs if no exception occurs<br>
 finally:<br>
-    # Runs no matter what (used for cleanup)   <br> 
+    # Runs no matter what (used for cleanup)   <br>  ``` </pre>
 
 **Example** <br>
 
