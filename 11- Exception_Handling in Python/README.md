@@ -4,48 +4,48 @@ Exception handling in Python is a way to manage errors that may occur during the
 
 **Basic Syntax** <br>
 
-try:
-    # Code that might raise an exception
-    x = 1 / 0
-except ZeroDivisionError:
-
-    # Code that runs if a ZeroDivisionError occurs
-    print("You can't divide by zero!")
-
-**Example**
-
-try:
-    # Code that may raise an exception
-except <ExceptionType1>:
-    # Handle ExceptionType1
-except <ExceptionType2>:
-    # Handle ExceptionType2
-else:
-    # Runs if no exception occurs
-finally:
-    # Runs no matter what (used for cleanup)    
+try:<br>
+    # Code that might raise an exception<br>
+    x = 1 / 0<br>
+except ZeroDivisionError:<br>
+    # Code that runs if a ZeroDivisionError occurs<br>
+    print("You can't divide by zero!")<br>
 
 **Example**
 
-try:
-    number = int(input("Enter a number: "))
-    result = 10 / number
-except ValueError:
-    print("That's not a valid number.")
-except ZeroDivisionError:
-    print("Division by zero is not allowed.")
-else:
-    print("Result is:", result)
-finally:
-    print("Execution complete.")
+try:<br>
+    # Code that may raise an exception<br>
+except <ExceptionType1>:<br>
+    # Handle ExceptionType1<br>
+except <ExceptionType2>:<br>
+    # Handle ExceptionType2<br>
+else:<br>
+    # Runs if no exception occurs<br>
+finally:<br>
+    # Runs no matter what (used for cleanup)   <br> 
+
+**Example** <br>
+
+<pre> ```
+try:<br>
+    number = int(input("Enter a number: "))<br>
+    result = 10 / number<br>
+except ValueError:<br>
+    print("That's not a valid number.")<br>
+except ZeroDivisionError:<br>
+    print("Division by zero is not allowed.")<br>
+else:<br>
+    print("Result is:", result)<br>
+finally:<br>
+    print("Execution complete.")<br>
+    ``` </pre>
 
 
-**Custom Exceptions**
-You can define your own exceptions by creating a class that inherits from Exception.
 
-python
-Copy
-Edit
+**Custom Exceptions** <br>
+
+You can define your own exceptions by creating a class that inherits from Exception.<br>
+
 class MyError(Exception):
     pass
 
