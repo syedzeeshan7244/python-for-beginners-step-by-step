@@ -4,10 +4,10 @@ Exception handling in Python is a way to manage errors that may occur during the
 
 **Basic Syntax** <br>
 
-try:<br>
-    # Code that might raise an exception<br>
-    x = 1 / 0<br>
-except ZeroDivisionError:<br>
+try:
+    # Code that might raise an exception
+    x = 1 / 0
+except ZeroDivisionError:
 
     # Code that runs if a ZeroDivisionError occurs
     print("You can't divide by zero!")
