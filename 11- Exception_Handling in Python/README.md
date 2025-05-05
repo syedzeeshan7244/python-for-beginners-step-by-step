@@ -8,5 +8,6 @@ try:
     # Code that might raise an exception
     x = 1 / 0
 except ZeroDivisionError:
+
     # Code that runs if a ZeroDivisionError occurs
     print("You can't divide by zero!")
