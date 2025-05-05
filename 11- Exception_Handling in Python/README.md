@@ -1,1 +1,1 @@
-
+Exception handling in Python is a way to manage errors that may occur during the execution of a program. Instead of letting the program crash, you can "catch" exceptions and decide how to handle them gracefully.
