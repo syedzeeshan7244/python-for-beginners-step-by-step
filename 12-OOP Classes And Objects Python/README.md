@@ -5,7 +5,7 @@ code using classes and objects. It allows you to model real-world entities and t
 
 **Basic Concepts of OOP in Python**<br>
 
-1. **Class**<br>
+**1. Class**<br>
 
 A blueprint for creating objects (like a template).<br>
 <pre>
@@ -18,16 +18,16 @@ class Person:
         print(f"Hello, my name is {self.name}")</pre>
 
 
-2. **Object**<br>
+**2. Object**<br>
 An instance of a class.<br>
 <pre>
 p1 = Person("Alice", 30)
 p1.greet()  # Output: Hello, my name is Alice </pre>
 
-3. **The __init__ Method**<br>
+**3. The __init__ Method**<br>
 This is the constructor; it runs automatically when an object is created.<br>
 
-4. **Inheritance**<br>
+**4. Inheritance**<br>
 Allows one class to inherit the attributes and methods of another.<br>
 <pre>
 class Student(Person):
@@ -38,7 +38,7 @@ class Student(Person):
     def show_id(self):
         print(f"My ID is {self.student_id}")</pre>
 
-5. **Encapsulation**<br>
+**5. Encapsulation**<br>
 Keeping internal data private and using methods to access or modify it.<br>
 <pre>
 class Account:
@@ -51,7 +51,7 @@ class Account:
     def deposit(self, amount):
         self.__balance += amount</pre>
 
-6. **Polymorphism**<br>
+**6. Polymorphism**<br>
 Different classes can have methods with the same name, but different behavior.<br>
 <pre>
 class Dog:
@@ -71,7 +71,7 @@ make_sound(Cat())  # Meow! </pre>
 ***Simple Banking System (OOP in Python)***<br>
 Simple Banking System example using OOP in Python. This project demonstrates key OOP principles: classes, inheritance, encapsulation, and methods.<br>
 
- 1. Define the base Account class<br>
+ **1. Define the base Account class**<br>
 <pre>
  class Account:
 
@@ -99,7 +99,7 @@ Simple Banking System example using OOP in Python. This project demonstrates key
     def __str__(self):
         return f"Account owner: {self.owner}\nBalance: ${self.__balance}" </pre>
 
-2. Create a subclass SavingsAccount<br>
+**2. Create a subclass SavingsAccount**<br>
 <pre>
 class SavingsAccount(Account):
     def __init__(self, owner, balance=0, interest_rate=0.02):
@@ -111,7 +111,7 @@ class SavingsAccount(Account):
         self.deposit(interest)
         print(f"Interest of ${interest:.2f} applied.")</pre>
 
-3. Using the classes<br>
+**3. Using the classes**<br>
 
 <pre>
 # Create an account
